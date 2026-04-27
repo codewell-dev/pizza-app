@@ -5,6 +5,7 @@ const withNextIntl = createNextIntlPlugin("./i18n/request.ts");
 
 const nextConfig: NextConfig = {
   output: "standalone",
+  allowedDevOrigins: ["k86jzy-3000.csb.app"],
   images: {
     remotePatterns: [
       {
