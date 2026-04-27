@@ -1,0 +1,145 @@
+{
+  "header": {
+    "promotions": "Promotions",
+    "login": "Log in",
+    "cart": "Cart",
+    "phone": "8-800-000-00-00",
+    "close": "Close",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  },
+  "basket": {
+    "title": "Cart",
+    "empty": "Your cart is empty 🍕",
+    "promo": "Sun–Thu from 18:00: Carbonara pizza 30cm for 100₴ or salmon roll for 150₴.",
+    "checkout": "Place order",
+    "total": "Total",
+    "pieces": "pcs",
+    "closeCart": "Close cart",
+    "button": "CART"
+  },
+  "login": {
+    "openBtn": "LOG IN",
+    "title": "Log in",
+    "titleRegister": "Register",
+    "subtitle": "Enter your email and password",
+    "subtitleRegister": "Create a Pizza House account",
+    "email": "Email",
+    "password": "Password",
+    "submit": "Log in",
+    "submitRegister": "Register",
+    "forgot": "Forgot password?",
+    "close": "Close",
+    "switchToRegister": "No account? Register",
+    "switchToLogin": "Already have an account? Log in",
+    "emailError": "Enter a valid email",
+    "emailRequired": "Email is required",
+    "passwordRequired": "Password is required",
+    "passwordMin": "Minimum 6 characters",
+    "loginError": "Invalid email or password",
+    "registerError": "Registration failed",
+    "loggedInAs": "Logged in as",
+    "logout": "Log out",
+    "profile": "My profile",
+    "orders": "My orders"
+  },
+  "product": {
+    "addToCart": "Add to cart",
+    "weight": "g.",
+    "weightShort": "g",
+    "addons": "Add extras",
+    "relatedTitle": "Often ordered with",
+    "addToCartAria": "Add to cart",
+    "removeAria": "Remove"
+  },
+  "category": {
+    "empty": "No products in this category.",
+    "metaTitle": "Category"
+  },
+  "footer": {
+    "copyright": "© 2008–2025 Pizza House. All rights reserved.",
+    "nav": {
+      "home": "Home",
+      "restaurants": "Restaurants",
+      "reviews": "Reviews",
+      "promotions": "Promotions",
+      "news": "News",
+      "bonus": "Loyalty program",
+      "delivery": "Delivery terms",
+      "banquets": "Banquets",
+      "about": "About Pizza House",
+      "careers": "Careers",
+      "contacts": "Contact management",
+      "offer": "Public offer",
+      "terms": "Company terms"
+    }
+  },
+  "carousel": {
+    "slide": "Promotion"
+  },
+  "order": {
+    "title": "Checkout",
+    "yourOrder": "Your order",
+    "delivery": "Delivery",
+    "pickup": "Pickup",
+    "name": "Name",
+    "phone": "Phone",
+    "address": "Delivery address",
+    "street": "Street",
+    "house": "House",
+    "apartment": "Apartment",
+    "comment": "Order comment",
+    "payment": "Payment method",
+    "cash": "Cash",
+    "card": "Card to courier",
+    "online": "Online",
+    "submit": "Place order",
+    "total": "Total",
+    "deliveryFee": "Delivery",
+    "free": "Free",
+    "items": "Items",
+    "emptyCart": "Cart is empty",
+    "nameRequired": "Enter your name",
+    "phoneRequired": "Enter your phone",
+    "addressRequired": "Enter address",
+    "phoneError": "Invalid phone format",
+    "successTitle": "Order placed!",
+    "successText": "We will contact you shortly",
+    "backHome": "Go home"
+  },
+  "breadcrumbs": {
+    "home": "Home",
+    "order": "Checkout",
+    "pizza": "Pizza",
+    "myOrders": "My orders"
+  },
+  "myOrders": {
+    "title": "My orders",
+    "empty": "You have no orders yet",
+    "orderNum": "Order",
+    "status": "Status",
+    "total": "Total",
+    "date": "Date",
+    "items": "Items",
+    "delivery": "Delivery",
+    "pickup": "Pickup",
+    "cash": "Cash",
+    "card": "Card to courier",
+    "online": "Online payment",
+    "loginRequired": "Log in to see your orders",
+    "loadMore": "Load more",
+    "details": "Details"
+  },
+  "orderStatuses": {
+    "pending": "Pending",
+    "confirmed": "Confirmed",
+    "preparing": "Preparing",
+    "delivering": "On the way",
+    "done": "Delivered",
+    "cancelled": "Cancelled"
+  },
+  "home": {
+    "eyebrow": "Our menu",
+    "heading": "Choose and order 🍕"
+  }
+}

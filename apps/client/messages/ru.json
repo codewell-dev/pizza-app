@@ -1,0 +1,145 @@
+{
+  "header": {
+    "promotions": "Акции",
+    "login": "Войти",
+    "cart": "Корзина",
+    "phone": "8-800-000-00-00",
+    "close": "Закрыть",
+    "openMenu": "Открыть меню",
+    "closeMenu": "Закрыть меню"
+  },
+  "basket": {
+    "title": "Корзина",
+    "empty": "Корзина пуста 🍕",
+    "promo": "Вс–Чт с 18:00 до закрытия: пицца Карбонара 30см за 100₴ или ролл с лососем за 150₴.",
+    "checkout": "Оформить заказ",
+    "total": "Итого",
+    "pieces": "шт",
+    "closeCart": "Закрыть корзину",
+    "button": "КОРЗИНА"
+  },
+  "login": {
+    "openBtn": "ВОЙТИ",
+    "title": "Войти",
+    "titleRegister": "Регистрация",
+    "subtitle": "Введите email и пароль",
+    "subtitleRegister": "Создайте аккаунт Pizza House",
+    "email": "Email",
+    "password": "Пароль",
+    "submit": "Войти",
+    "submitRegister": "Зарегистрироваться",
+    "forgot": "Забыли пароль?",
+    "close": "Закрыть",
+    "switchToRegister": "Нет аккаунта? Зарегистрироваться",
+    "switchToLogin": "Уже есть аккаунт? Войти",
+    "emailError": "Введите корректный email",
+    "emailRequired": "Email обязателен",
+    "passwordRequired": "Пароль обязателен",
+    "passwordMin": "Минимум 6 символов",
+    "loginError": "Неверный email или пароль",
+    "registerError": "Ошибка регистрации",
+    "loggedInAs": "Вы вошли как",
+    "logout": "Выйти",
+    "profile": "Мой профиль",
+    "orders": "Мои заказы"
+  },
+  "product": {
+    "addToCart": "В корзину",
+    "weight": "гр.",
+    "weightShort": "г",
+    "addons": "Хочу добавить",
+    "relatedTitle": "Часто заказывают с",
+    "addToCartAria": "Добавить в корзину",
+    "removeAria": "Удалить"
+  },
+  "category": {
+    "empty": "Нет продуктов в этой категории.",
+    "metaTitle": "Категория"
+  },
+  "footer": {
+    "copyright": "© 2008–2025 Pizza House. Все права защищены.",
+    "nav": {
+      "home": "Главная",
+      "restaurants": "Рестораны",
+      "reviews": "Отзывы",
+      "promotions": "Акции",
+      "news": "Новости",
+      "bonus": "Бонусная программа",
+      "delivery": "Условия доставки",
+      "banquets": "Банкеты",
+      "about": "О компании Pizza House",
+      "careers": "Вакансии",
+      "contacts": "Связь с руководством",
+      "offer": "Оферта",
+      "terms": "Условия компании"
+    }
+  },
+  "carousel": {
+    "slide": "Акция"
+  },
+  "order": {
+    "title": "Оформление заказа",
+    "yourOrder": "Ваш заказ",
+    "delivery": "Доставка",
+    "pickup": "Самовывоз",
+    "name": "Имя",
+    "phone": "Телефон",
+    "address": "Адрес доставки",
+    "street": "Улица",
+    "house": "Дом",
+    "apartment": "Квартира",
+    "comment": "Комментарий к заказу",
+    "payment": "Способ оплаты",
+    "cash": "Наличные",
+    "card": "Картой курьеру",
+    "online": "Онлайн",
+    "submit": "Заказать",
+    "total": "Итого",
+    "deliveryFee": "Доставка",
+    "free": "Бесплатно",
+    "items": "Товары",
+    "emptyCart": "Корзина пуста",
+    "nameRequired": "Укажите имя",
+    "phoneRequired": "Укажите телефон",
+    "addressRequired": "Укажите адрес",
+    "phoneError": "Неверный формат телефона",
+    "successTitle": "Заказ принят!",
+    "successText": "Мы свяжемся с вами в ближайшее время",
+    "backHome": "На главную"
+  },
+  "breadcrumbs": {
+    "home": "Главная",
+    "order": "Оформление заказа",
+    "pizza": "Пицца",
+    "myOrders": "Мои заказы"
+  },
+  "myOrders": {
+    "title": "Мои заказы",
+    "empty": "У вас ещё нет заказов",
+    "orderNum": "Заказ",
+    "status": "Статус",
+    "total": "Сумма",
+    "date": "Дата",
+    "items": "Позиции",
+    "delivery": "Доставка",
+    "pickup": "Самовывоз",
+    "cash": "Наличные",
+    "card": "Картой курьеру",
+    "online": "Онлайн оплата",
+    "loginRequired": "Войдите чтобы увидеть заказы",
+    "loadMore": "Показать ещё",
+    "details": "Детали"
+  },
+  "orderStatuses": {
+    "pending": "Ожидает подтверждения",
+    "confirmed": "Подтверждено",
+    "preparing": "Готовится",
+    "delivering": "Доставляется",
+    "done": "Доставлено",
+    "cancelled": "Отменено"
+  },
+  "home": {
+    "eyebrow": "Наше меню",
+    "heading": "Выбирай и заказывай 🍕"
+  }
+}

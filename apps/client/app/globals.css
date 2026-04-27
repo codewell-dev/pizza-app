@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── Design tokens ──────────────────────────────────────────── */
+:root {
+  --brand-gold: #FAE900;
+  --brand-gold-dark: #E8D800;
+  --brand-gold-deep: #C9BB00;
+  --brand-charcoal: #1A1A18;
+  --brand-charcoal-mid: #2D2D2B;
+  --brand-ink: #111110;
+  --brand-cream: #FAFAF7;
+  --brand-surface: #FFFFFF;
+  --brand-surface-mid: #F5F5F2;
+  --brand-muted: #8A8A85;
+  --brand-border: rgba(26,26,24,0.08);
+  --brand-border-mid: rgba(26,26,24,0.14);
+  --brand-red: #E8321A;
+  --brand-green: #1A7A3C;
+
+  --shadow-card: 0 2px 8px rgba(26,26,24,0.06), 0 0 0 1px rgba(26,26,24,0.06);
+  --shadow-card-hover: 0 12px 40px rgba(26,26,24,0.12), 0 0 0 1px rgba(26,26,24,0.08);
+  --shadow-drawer: -8px 0 40px rgba(26,26,24,0.15);
+  --shadow-gold: 0 4px 20px rgba(250,233,0,0.45);
+  --shadow-header: 0 1px 0 rgba(26,26,24,0.06), 0 4px 24px rgba(26,26,24,0.06);
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+  --radius-pill: 100px;
+
+  --transition-fast: 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-base: 0.22s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+
+  --background: var(--brand-cream);
+  --foreground: var(--brand-charcoal);
+
+  font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+/* ─── Base reset ─────────────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  color: var(--brand-charcoal);
+  background: var(--brand-cream);
+  margin: 0;
+  padding: 0;
+  font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+::selection {
+  background: var(--brand-gold);
+  color: var(--brand-ink);
+}
+
+/* ─── Custom scrollbar ────────────────────────────────────────── */
+::-webkit-scrollbar { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb {
+  background: rgba(26,26,24,0.18);
+  border-radius: 99px;
+}
+::-webkit-scrollbar-thumb:hover { background: rgba(26,26,24,0.32); }
+
+/* ─── Carousel (react-slick overrides) ───────────────────────── */
+.slick-next { right: 16px; }
+.slick-prev { left: 16px; z-index: 3; }
+.slick-prev:before, .slick-next:before {
+  font-size: 32px !important;
+  opacity: 0.85;
+  color: white !important;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+.slick-dots {
+  bottom: 16px;
+}
+.slick-dots li button:before {
+  color: rgba(255,255,255,0.7) !important;
+  font-size: 8px !important;
+}
+.slick-dots li.slick-active button:before {
+  color: #fff !important;
+  font-size: 10px !important;
+}
+
+/* ─── Utility: hide scrollbar ─────────────────────────────────── */
+.scrollbar-hide::-webkit-scrollbar { display: none; }
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* ─── Animations ─────────────────────────────────────────────── */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideInRight {
+  from { opacity: 0; transform: translateX(20px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes popIn {
+  0%   { transform: scale(0.8); opacity: 0; }
+  70%  { transform: scale(1.08); }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes cartBounce {
+  0%, 100% { transform: scale(1); }
+  30% { transform: scale(1.25) rotate(-8deg); }
+  60% { transform: scale(0.92) rotate(4deg); }
+}
+
+@keyframes shimmer {
+  0%   { background-position: -400px 0; }
+  100% { background-position: 400px 0; }
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes pulseRing {
+  0%   { transform: scale(0.85); box-shadow: 0 0 0 0 rgba(250,233,0,0.7); }
+  70%  { transform: scale(1); box-shadow: 0 0 0 12px rgba(250,233,0,0); }
+  100% { transform: scale(0.85); box-shadow: 0 0 0 0 rgba(250,233,0,0); }
+}
+
+/* ─── Utility animation classes ───────────────────────────────── */
+.animate-fade-in  { animation: fadeIn var(--transition-base) both; }
+.animate-pop-in   { animation: popIn 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) both; }
+.animate-slide-in { animation: slideInRight var(--transition-base) both; }
+
+/* ─── Product card ────────────────────────────────────────────── */
+.pizza-card {
+  width: 100%;
+  background: #fff;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--brand-border);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: box-shadow var(--transition-base), transform var(--transition-base);
+  cursor: default;
+  position: relative;
+}
+
+.pizza-card:hover {
+  box-shadow: var(--shadow-card-hover);
+  transform: translateY(-3px);
+}
+
+.pizza-card:hover .pizza-card__image {
+  transform: scale(1.04);
+}
+
+.pizza-card__image-wrap {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background: var(--brand-surface-mid);
+  overflow: hidden;
+  position: relative;
+}
+
+.pizza-card__image {
+  transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  object-fit: contain;
+  padding: 8px;
+}
+
+.pizza-card__add-btn {
+  transition: all var(--transition-fast) !important;
+}
+
+.pizza-card__add-btn:hover {
+  transform: translateY(-1px) !important;
+  box-shadow: var(--shadow-gold) !important;
+}
+
+.pizza-card__add-btn:active {
+  transform: scale(0.95) !important;
+}
+
+/* Cart bounce animation when item added */
+.cart-bounce {
+  animation: cartBounce 0.45s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+
+/* ─── Sticky category bar ─────────────────────────────────────── */
+.category-pill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6px 10px;
+  border-radius: var(--radius-md);
+  min-width: 68px;
+  cursor: pointer;
+  transition: background var(--transition-fast), transform var(--transition-fast);
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.category-pill:hover {
+  background: rgba(26,26,24,0.06);
+  transform: translateY(-1px);
+}
+
+.category-pill:active {
+  transform: scale(0.96);
+}
+
+.category-pill.active {
+  background: var(--brand-gold);
+}
+
+/* ─── Section headings ────────────────────────────────────────── */
+.section-eyebrow {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--brand-muted);
+  margin-bottom: 4px;
+}
+
+/* ─── Badge variants ──────────────────────────────────────────── */
+.badge-hot {
+  background: var(--brand-red);
+  color: #fff;
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 2px 7px;
+  border-radius: var(--radius-pill);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.badge-new {
+  background: var(--brand-green);
+  color: #fff;
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 2px 7px;
+  border-radius: var(--radius-pill);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.badge-sale {
+  background: var(--brand-gold);
+  color: var(--brand-ink);
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 2px 7px;
+  border-radius: var(--radius-pill);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+/* ─── Page transition ─────────────────────────────────────────── */
+main {
+  animation: fadeIn 0.3s ease both;
+}
+
+/* ─── Mobile sticky order bar ─────────────────────────────────── */
+.mobile-order-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1300;
+  padding: 12px 16px;
+  padding-bottom: max(12px, env(safe-area-inset-bottom));
+  background: rgba(255,255,255,0.95);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-top: 1px solid var(--brand-border);
+  box-shadow: 0 -4px 20px rgba(26,26,24,0.08);
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .mobile-order-bar.has-items {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+}
+
+/* ─── Focus ring ──────────────────────────────────────────────── */
+:focus-visible {
+  outline: 2px solid var(--brand-gold);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
+}
+
+/* ─── Responsive helpers ──────────────────────────────────────── */
+@media (max-width: 768px) {
+  body {
+    padding-bottom: 80px; /* space for mobile sticky bar */
+  }
+}

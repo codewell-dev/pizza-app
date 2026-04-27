@@ -1,0 +1,20 @@
+{
+  "name": "pizza-house-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently -n \"client,server\" -c \"cyan,green\" \"pnpm --filter client dev\" \"pnpm --filter server start:dev\"",
+    "build": "pnpm --filter server build && pnpm --filter client build",
+    "build:server": "pnpm --filter server build",
+    "build:client": "pnpm --filter client build",
+    "start": "concurrently -n \"client,server\" -c \"cyan,green\" \"pnpm --filter client start\" \"pnpm --filter server start:prod\"",
+    "start:server": "pnpm --filter server start:prod",
+    "start:client": "pnpm --filter client start",
+    "lint": "pnpm -r lint",
+    "type-check": "pnpm -r type-check",
+    "test": "pnpm -r test --passWithNoTests"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}

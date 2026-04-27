@@ -1,0 +1,145 @@
+{
+  "header": {
+    "promotions": "Акції",
+    "login": "Увійти",
+    "cart": "Кошик",
+    "phone": "8-800-000-00-00",
+    "close": "Закрити",
+    "openMenu": "Відкрити меню",
+    "closeMenu": "Закрити меню"
+  },
+  "basket": {
+    "title": "Кошик",
+    "empty": "Кошик порожній 🍕",
+    "promo": "Нд–Чт з 18:00 до закриття: піца Карбонара 30см за 100₴ або рол з лососем за 150₴.",
+    "checkout": "Оформити замовлення",
+    "total": "Всього",
+    "pieces": "шт",
+    "closeCart": "Закрити кошик",
+    "button": "КОШИК"
+  },
+  "login": {
+    "openBtn": "УВІЙТИ",
+    "title": "Увійти",
+    "titleRegister": "Реєстрація",
+    "subtitle": "Введіть email та пароль",
+    "subtitleRegister": "Створіть акаунт Pizza House",
+    "email": "Email",
+    "password": "Пароль",
+    "submit": "Увійти",
+    "submitRegister": "Зареєструватися",
+    "forgot": "Забули пароль?",
+    "close": "Закрити",
+    "switchToRegister": "Немає акаунту? Зареєструватися",
+    "switchToLogin": "Вже є акаунт? Увійти",
+    "emailError": "Введіть коректний email",
+    "emailRequired": "Email обов'язковий",
+    "passwordRequired": "Пароль обов'язковий",
+    "passwordMin": "Мінімум 6 символів",
+    "loginError": "Невірний email або пароль",
+    "registerError": "Помилка реєстрації",
+    "loggedInAs": "Ви увійшли як",
+    "logout": "Вийти",
+    "profile": "Мій профіль",
+    "orders": "Мої замовлення"
+  },
+  "product": {
+    "addToCart": "У кошик",
+    "weight": "гр.",
+    "weightShort": "г",
+    "addons": "Хочу додати",
+    "relatedTitle": "Часто замовляють з",
+    "addToCartAria": "Додати до кошика",
+    "removeAria": "Видалити"
+  },
+  "category": {
+    "empty": "Немає продуктів у цій категорії.",
+    "metaTitle": "Категорія"
+  },
+  "footer": {
+    "copyright": "© 2008–2025 Pizza House. Усі права захищені.",
+    "nav": {
+      "home": "Головна",
+      "restaurants": "Ресторани",
+      "reviews": "Відгуки",
+      "promotions": "Акції",
+      "news": "Новини",
+      "bonus": "Бонусна програма",
+      "delivery": "Умови доставки",
+      "banquets": "Бенкети",
+      "about": "Про компанію Pizza House",
+      "careers": "Вакансії",
+      "contacts": "Зв'язок з Керівництвом",
+      "offer": "Оферта",
+      "terms": "Умови компанії"
+    }
+  },
+  "carousel": {
+    "slide": "Акція"
+  },
+  "order": {
+    "title": "Оформлення замовлення",
+    "yourOrder": "Ваше замовлення",
+    "delivery": "Доставка",
+    "pickup": "Самовивіз",
+    "name": "Ім'я",
+    "phone": "Телефон",
+    "address": "Адреса доставки",
+    "street": "Вулиця",
+    "house": "Будинок",
+    "apartment": "Квартира",
+    "comment": "Коментар до замовлення",
+    "payment": "Спосіб оплати",
+    "cash": "Готівка",
+    "card": "Карткою кур'єру",
+    "online": "Онлайн",
+    "submit": "Замовити",
+    "total": "Разом",
+    "deliveryFee": "Доставка",
+    "free": "Безкоштовно",
+    "items": "Товари",
+    "emptyCart": "Кошик порожній",
+    "nameRequired": "Вкажіть ім'я",
+    "phoneRequired": "Вкажіть телефон",
+    "addressRequired": "Вкажіть адресу",
+    "phoneError": "Невірний формат телефону",
+    "successTitle": "Замовлення прийнято!",
+    "successText": "Ми зв'яжемося з вами найближчим часом",
+    "backHome": "На головну"
+  },
+  "breadcrumbs": {
+    "home": "Головна",
+    "order": "Оформлення замовлення",
+    "pizza": "Піца",
+    "myOrders": "Мої замовлення"
+  },
+  "myOrders": {
+    "title": "Мої замовлення",
+    "empty": "У вас ще немає замовлень",
+    "orderNum": "Замовлення",
+    "status": "Статус",
+    "total": "Сума",
+    "date": "Дата",
+    "items": "Позиції",
+    "delivery": "Доставка",
+    "pickup": "Самовивіз",
+    "cash": "Готівка",
+    "card": "Картою кур'єру",
+    "online": "Онлайн оплата",
+    "loginRequired": "Увійдіть щоб побачити замовлення",
+    "loadMore": "Показати ще",
+    "details": "Деталі"
+  },
+  "orderStatuses": {
+    "pending": "Очікує підтвердження",
+    "confirmed": "Підтверджено",
+    "preparing": "Готується",
+    "delivering": "Доставляється",
+    "done": "Доставлено",
+    "cancelled": "Скасовано"
+  },
+  "home": {
+    "eyebrow": "Наше меню",
+    "heading": "Вибирай та замовляй 🍕"
+  }
+}
