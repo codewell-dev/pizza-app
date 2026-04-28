@@ -2,6 +2,7 @@
   "name": "pizza-house-monorepo",
   "version": "1.0.0",
   "private": true,
+  "packageManager": "pnpm@8.15.4",
   "scripts": {
     "dev": "concurrently -n \"client,server\" -c \"cyan,green\" \"pnpm --filter client dev\" \"pnpm --filter server start:dev\"",
     "build": "pnpm --filter server build && pnpm --filter client build",
